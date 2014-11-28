@@ -6,26 +6,25 @@
         USER_OBJECT_ID = 'userObjectId',
         USERNAME = 'username';
 
-
     function notify(type, message) {
         return noty({
             text: message,
             type: type,
             layout: 'top',
-            dismissQueue: true, // If you want to use queue feature set this true
+            dismissQueue: true,
             template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
             animation: {
-                open: {height: 'toggle'}, // or Animate.css class names like: 'animated bounceInLeft'
-                close: {height: 'toggle'}, // or Animate.css class names like: 'animated bounceOutLeft'
+                open: {height: 'toggle'},
+                close: {height: 'toggle'},
                 easing: 'swing',
-                speed: 500 // opening & closing animation speed
+                speed: 500
             },
-            timeout: false, // delay for closing event. Set false for sticky notifications
-            force: false, // adds notification to the beginning of queue when set to true
+            timeout: false,
+            force: false,
             modal: false,
-            maxVisible: 5, // you can set max visible notification for dismissQueue true option,
-            killer: false, // for close all notifications before show
-            closeWith: ['click'] // ['click', 'button', 'hover', 'backdrop'] // backdrop click will close all notifications
+            maxVisible: 5,
+            killer: false,
+            closeWith: ['click']
 
         });
     }
@@ -49,11 +48,9 @@
 
     View.prototype.attachOnClickLogReg = function () {
         var username = this.usernameInput,
-            password = this.passwordInput,
-            View = this.form;
+            password = this.passwordInput;
 
         this.button.on('click', function (e) {
-
             e.preventDefault();
             var user = username.val();
             var pass = password.val();
@@ -96,7 +93,6 @@
     }
 
     function handleLoadedBookMarks(data) {
-
         showLoadedBookmarksData(data);
         View.prototype.attachAddAndRemoveBookmarkEventHandlers();
     }
@@ -140,7 +136,6 @@
         $addBookMarkWrapper.append('<button id="add-bookmark-btn">Add</button>');
 
         $(selector).append($addBookMarkWrapper);
-
     }
 
     View.prototype.checkSessionKey = function () {
@@ -246,6 +241,5 @@
         .checkSessionKey()
         .attachOnClickLogReg()
         .attachOnClickRegisterLink();
-
 
 }());

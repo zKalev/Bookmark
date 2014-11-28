@@ -32,7 +32,7 @@ application.data = (function () {
 
         Base.prototype.getAll = function (objectId,
                                           success, error) {
-            var url = this.serviceUrl + '?where={"userId":{"__type":"Pointer","className":"_User","objectId":"'+objectId+'"}}'; // + objectId + '" }}'
+            var url = this.serviceUrl + '?where={"userId":{"__type":"Pointer","className":"_User","objectId":"' + objectId + '"}}'; // + objectId + '" }}'
             requester.get(url, success, error);
         }
 
@@ -47,7 +47,6 @@ application.data = (function () {
 
         return Base
     }());
-
 
     return {
         get: function (baseUrl) {

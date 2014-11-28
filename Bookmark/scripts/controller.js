@@ -6,7 +6,6 @@ application.controller = (function () {
         this.persister = persister;
     }
 
-
     Main.prototype.login = function (username, password, handleLoginResult) {
 
         this.persister.login(username, password,
@@ -35,7 +34,6 @@ application.controller = (function () {
                 console.log(error)
             });
     }
-
 
     Main.prototype.loadBookmarksForLoggedInUser = function (loggedUserId, handleLoadedBookMarks) {
         this.persister.bookmarks.getAll(loggedUserId,

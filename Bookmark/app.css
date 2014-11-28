@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+#wrapper {
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+    background-color: #ff6e06;
+    width: 80%;
+    /*height: 60%;*/
+    border: solid;
+    border-color: #cc7b4b;
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+header {
+    text-align: center;
+    background-color: bisque;
+    border-bottom: solid;
+    border-color: #cc7b4b;
+    border-radius: 7px;
+
+}
+
+form {
+    width: 50%;
+    height: 70%;
+    background-color: bisque;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 5px;
+    border: solid;
+    border-color: #cc7b4b;
+    padding-top: 10px;
+    margin-bottom: 10%;
+}
+
+.input-login {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    width: 60%;
+}
+
+#input-group {
+    padding: 10%;
+
+}
+
+#log-reg-btn {
+    margin: 0 auto;
+    margin-right: 8%;
+
+    width: 25%;
+    height: 30px;
+    border-radius: 2px;
+    border-color: orangered;
+    border-width: 3px;
+    background-color: orange;
+}
+
+strong {
+    margin-top: 20px;
+    font-size: large;
+
+}
+
+hr {
+    width: 50%;
+    height: 3px;
+    background-color: saddlebrown;
+}
+
+.label {
+    margin-right: 40%;
+}
+
+.bookmark-wrapper {
+    border: solid #999;
+    border-width: 2px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.remove-bookmark {
+    float: right;
+    background-color: red;
+    display: block;
+}
+
+#add-bookmark-wrapper {
+    border: solid #999;
+    border-width: 2px;
+    width: 200px;
+    text-align: center;
+    height: 95px;
+    /*float: right;*/
+    /*margin-top: 35%;*/
+    margin-left: 77%;
+    margin-bottom: 10px;
+}
+
+#add-new-bookmark-label {
+    margin: 0;
+    padding: 0;
+
+}
+
+.new-bookmark-input {
+    width: 100px;
+    display: block;
+
+}
+#add-bookmark-btn{
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+
+}
+
+#input-wrapper{
+    float: left;
+    margin-left: 10px;
+}
+
+#add-bookmark-hr{
+    width:90%
+}
